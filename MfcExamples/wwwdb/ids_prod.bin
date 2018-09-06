@@ -1,0 +1,9 @@
+<H1>Products<HR>
+<P>
+<TABLE BORDER WIDTH="100%%">
+<TR>
+ <TD><B>ProductID</B></TD>
+   <TD><B>ProductName</B></TD>
+   <TD><B>UnitPrice</B></TD>
+<TD><B>CompanyName</B></TD>
+</TR>

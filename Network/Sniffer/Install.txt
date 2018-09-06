@@ -1,0 +1,19 @@
+
+To use the packet sniffer you must first install the packet driver
+
+Installation
+============
+
+1. Log on to your NT 4.0 system as Administrator.
+
+2. Install your Network Adapter(s). Be SURE all Network Adapters are working
+   correctly before continuing. 
+
+3. Select Control Panel/Network/Protocol and Add the driver. Click on 
+   Have Disk and specify \packet32 as the path. Then click OK to complete 
+   the installation. 
+   
+4. Reboot your NT system.
+
+5. you can now run Sniffer.exe
+

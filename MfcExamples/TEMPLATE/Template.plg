@@ -1,0 +1,30 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Template - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WIN98\TEMP\RSP60D0.TMP" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp".\Release/Template.pch" /Yu"stdafx.h" /Fo".\Release/" /Fd".\Release/" /FD /c 
+"D:\My Documents\Mfc\Samples\Template\TempDlg.cpp"
+"D:\My Documents\Mfc\Samples\Template\Template.cpp"
+]
+Creating command line "cl.exe @C:\WIN98\TEMP\RSP60D0.TMP" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:no /pdb:".\Release/Template.pdb" /machine:I386 /out:".\Release/Template.exe"  ".\Release\StdAfx.obj" ".\Release\TempDlg.obj" ".\Release\Template.obj" ".\Release\Template.res" "
+<h3>Output Window</h3>
+Compiling...
+TempDlg.cpp
+Template.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Template.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

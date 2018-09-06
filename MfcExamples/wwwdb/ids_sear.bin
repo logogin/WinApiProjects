@@ -1,0 +1,13 @@
+<H1>Employees<HR>
+<P>
+<TABLE BORDER WIDTH="100%%">
+<TR>
+ <TD><B>EmployeeID</B></TD>
+   <TD><B>LastName</B></TD>
+   <TD><B>FirstName</B></TD>
+<TD><B>Title</B></TD>
+<TD><B>Address</B></TD>
+   <TD><B>City</B></TD>
+<TD><B>Country</B></TD>
+   <TD><B>HomePhone</B></TD>
+</TR>

@@ -1,0 +1,347 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Файл"
+    BEGIN
+        MENUITEM "Выход",                       ID_APP_EXIT
+    END
+    POPUP "&Вид"
+    BEGIN
+        MENUITEM "Панель инструментов",         ID_VIEW_TOOLBAR
+        MENUITEM "Инструменты рисования",       IDM_VIEWPANE, CHECKED
+        MENUITEM "Строка состояния",            ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Стиль"
+    BEGIN
+        MENUITEM "Влево",                       ID_STYLE_LEFT
+        MENUITEM "По центру",                   ID_STYLE_CENTERED
+        MENUITEM "Вправо",                      ID_STYLE_RIGHT
+        MENUITEM "По ширине",                   ID_STYLE_JUSTIFIED
+    END
+    POPUP "&Инструмент"
+    BEGIN
+        MENUITEM "&2 столбца",                  IDM_PANE_2COLUMN
+        MENUITEM "&3 столбца",                  IDM_PANE_3COLUMN
+    END
+    POPUP "&?"
+    BEGIN
+        MENUITEM "О программе ...",             ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_VIEWSELECT DIALOG DISCARDABLE  0, 0, 69, 84
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,1,14,66,34
+    CONTROL         "Команды",ID_VIEW_TOOLBAR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,25,59,10
+    CONTROL         "Инструменты",IDM_VIEWPANE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,35,60,10
+    COMBOBOX        IDC_PANE,2,55,65,50,CBS_DROPDOWNLIST | WS_VSCROLL
+END
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 217, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "О программе CTRLBARS"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,11,20,20
+    LTEXT           "Приложение CTRLBARS  Версия 1.0",IDC_STATIC,43,10,130,8
+    LTEXT           "Copyright © 1999  Мешков А., Тихомиров Ю.",IDC_STATIC,
+                    35,39,147,8
+    DEFPUSHBUTTON   "OK",IDOK,176,6,32,14,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_VIEWSELECT DLGINIT
+BEGIN
+    IDC_PANE, 0x403, 7, 0
+0xe0cb, 0xf2f1, 0xeae8, "\000" 
+    IDC_PANE, 0x403, 9, 0
+0xe0ca, 0xe0f0, 0xe4ed, 0xf8e0, "\000" 
+    IDC_PANE, 0x403, 10, 0
+0xfbc2, 0xe5e4, 0xe5eb, 0xe8ed, 0x00e5, 
+    IDC_PANE, 0x403, 6, 0
+0xe8ca, 0xf2f1, 0x00fc, 
+    IDC_PANE, 0x403, 12, 0
+0xe0d0, 0xeff1, 0xebfb, 0xf2e8, 0xebe5, 0x00fc, 
+    IDC_PANE, 0x403, 8, 0
+0xe0c7, 0xe8eb, 0xeae2, 0x00e0, 
+    IDC_PANE, 0x403, 6, 0
+0xe8cb, 0xe8ed, 0x00ff, 
+    IDC_PANE, 0x403, 13, 0
+0xfbc2, 0xeee1, 0x20f0, 0xe2f6, 0xf2e5, 0xe2ee, "\000" 
+    IDC_PANE, 0x403, 8, 0
+0xe0cc, 0xf8f1, 0xe0f2, 0x00e1, 
+    IDC_PANE, 0x403, 5, 0
+0x6552, 0x7463, "\000" 
+    IDC_PANE, 0x403, 6, 0
+0x6f52, 0x6e75, 0x0064, 
+    IDC_PANE, 0x403, 5, 0
+0x764f, 0x6c61, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_VIEWSELECT, DIALOG
+    BEGIN
+        RIGHTMARGIN, 67
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "RES\\CTRLBARS.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_PANE                BITMAP  DISCARDABLE     "RES\\PALETTE.BMP"
+IDB_TOOLBAR             BITMAP  DISCARDABLE     "res\\toolbar.bmp"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Home\0"
+            VALUE "FileDescription", "Ctrlbars\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Ctrlbars\0"
+            VALUE "LegalCopyright", "Copyright © 1999\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Ctrlbars.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Home Ctrlbars\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x419, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Приложение ControlBars"
+    AFX_IDS_IDLEMESSAGE     "Готово"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDC_PANE                "Выбрать новый инструмент\nВыбрать инструментl"
+    IDW_COMBO               "Выбрать новый стиль\nВыбрать стиль"
+    ID_INDICATOR_TIME       "00:00:00"
+    ID_INDICATOR_IDLE       "•"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_NUM        "NUM"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Вывести информацию о программе\nО программе"
+    ID_APP_EXIT             "Завершение работы приложения\nВыход"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_DESKACCESSORY   "Открыть вывранный элемент"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Показать или убрать панель инструментов\nПереключатель панели инструментов"
+    ID_VIEW_STATUS_BAR      "Показать или убрать стоку состояния\nПереключатель строки состояния"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_PANE_2COLUMN        "Сделать панель шириной в 2 столбца"
+    IDM_PANE_3COLUMN        "Сделать панель шириной в 3 столбца"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDW_TOOLBAR             "Показать или убрать панель инструментов\nПереключатель панели инструментов"
+    IDM_VIEWPANE            "Показать или убрать инструменты рисования\nПереключатель инструментов рисования"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SELECTED_PROMPT     "Выбран %1 инструмент."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Приложение ControlBars\nCtrlbars\n"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_STYLE_LEFT           "Установить стиль выравнивания влево\nВлево"
+    ID_STYLE_CENTERED       "Установить стиль выравнивания по центру\nПо центру"
+    ID_STYLE_RIGHT          "Установить стиль выравнивания вправо\nВправо"
+    ID_STYLE_JUSTIFIED      "Установить стиль выравнивания по ширине\nПо ширине"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PANEERASE            "Выбрать инструмент ластик\nЛастик"
+    ID_PANEPEN              "Выбрать инструмент карандаш\nКарандаш"
+    ID_PANESELECT           "Выделить элемент(ы)\nВыделение"
+    ID_PANEBRUSH            "Выбрать инструмент кисть\nКисть"
+    ID_PANESPRAY            "Выбрать инструмент распылитель\nРаспылитель"
+    ID_PANEPAINT            "Выбрать инструмент заливка\nЗаливка"
+    ID_PANELINE             "Выбрать инструмент линия\nЛиния"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PANEEYEDROP          "Выбрать цвет\nВыбор цвета"
+    ID_PANEMAG              "Выбрать масштаб\nМасштаб"
+    ID_PANERECT             "Выбрать прямоугольник\nПрямоуг."
+    ID_PANEROUND            "Выбрать скругленный прямоугольник\nСкругл."
+    ID_PANEOVAL             "Выбрать овал\nОвал"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.rc""  // Standard components\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "afxres.rc"  // Standard components
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

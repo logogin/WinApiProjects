@@ -1,0 +1,13 @@
+# Makefile for BC5
+
+update:
+    make -fmakefile.upd
+
+    make -fmakefile.dll
+
+    copy packet32.dll ..
+    copy packet32.lib ..
+        
+clean:
+    del *.bak
+    del *.obj

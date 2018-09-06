@@ -1,0 +1,26 @@
+# Makefile for BC5
+
+H = .
+HH = .
+CC = bcc32 -w-pro
+CFLAGS = -H=$(INCLUDE)\bc32def.csm -I$(HH) -I$(H)
+LIB = tlib
+LIBFILE = packet32.lib
+
+.c.obj:
+	$(CC) -c $(CFLAGS) $<
+    $(LIB) $(LIBFILE) /c -+$*
+
+.cpp.obj:
+	$(CC) -c $(CFLAGS) $<
+    $(LIB) $(LIBFILE) /c -+$*
+
+OBJS = packet32.obj
+
+
+all:	$(OBJS)
+
+lib:	all
+    tlib $(LIBFILE) /c +packet32
+
+packet32.obj: packet32.c $(HH)\packet32.h

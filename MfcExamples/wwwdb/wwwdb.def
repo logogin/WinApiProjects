@@ -1,0 +1,8 @@
+; WWWDB.def : declares the module parameters for the DLL.
+
+LIBRARY	     "WWWDB"
+
+EXPORTS
+	HttpExtensionProc
+	GetExtensionVersion
+	TerminateExtension
